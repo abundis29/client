@@ -1,6 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Root } from "./components/Root";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          <Root/>
         </a>
       </header>
     </div>
