@@ -1,28 +1,18 @@
+
 import React from "react";
 import logo from "./logo.svg";
-import "./App.css";
-import { Root } from "./components/Root";
-
-function App() {
+import "./App.scss";
+import { SideBox, Example } from "@v2";
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-          <Root/>
-        </a>
+        <SideBox msg="SEND PROP FROM HIGHER COMPONENT" className="right"/>
+        <Example />
       </header>
+
     </div>
   );
 }
-
 export default App;

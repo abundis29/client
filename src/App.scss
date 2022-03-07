@@ -1,3 +1,5 @@
+@import "./styles/reset.scss";
+
 .App {
   text-align: center;
 }
@@ -22,6 +24,12 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  p,
+  div {
+    color: white;
+  }
+
 }
 
 .App-link {
@@ -32,6 +40,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
