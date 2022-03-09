@@ -62,10 +62,10 @@ const useTailwind = fs.existsSync(
 );
 
 // Check if Webpack.config exist and merge
-const useRootWebpackFile = fs.existsSync(
-  path.join(paths.appPath, 'webpack.config.js')
-);
-const RootWepackConfig  = path.join(paths.appPath, 'webpack.config.js')
+// const useRootWebpackFile = fs.existsSync(
+//   path.join(paths.appPath, 'webpack.config.js')
+// );
+// const RootWepackConfig  = path.join(paths.appPath, 'webpack.config.js')
 
 
 
@@ -436,9 +436,11 @@ module.exports = function (webpackEnv) {
                     {
                       root: ["./src"],
                       alias: {
-                        "@/*": "./src/components/",
+                        "@/*": "./src/components/*",
                         "@v1": "./src/components/v1",
-                        "@v2": "./src/components/v2"
+                        "@v1/*": "./src/components/v1/*",
+                        "@v2": "./src/components/v2",
+                        "@v2/*": "./src/components/v2/*"
                       }
                     }
                   ]

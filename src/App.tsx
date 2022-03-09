@@ -8,7 +8,7 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <SideBox msg="SEND PROP FROM HIGHER COMPONENT" className="right"/>
+        <SideBox msg="prop message" className="right"/>
         <Example />
       </header>
 
