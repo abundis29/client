@@ -3,9 +3,9 @@ import ReactDOM from "react-dom";
 // import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-const Home = React.lazy(() =>
-  import(/* webpackChunkName: "pages" */ 'pages/Home'),
-)
+const Home = React.lazy(
+  () => import(/* webpackChunkName: "pages" */ "pages/Home")
+);
 
 // const Prefetched = React.lazy(() =>
 //   import(
@@ -15,13 +15,14 @@ const Home = React.lazy(() =>
 //   ),
 // )
 
-const App = React.lazy(() =>
-  import(
-    /* webpackPreload: true */
-    /* webpackChunkName: "preload" */
-    './App'
-  ),
-)
+const App = React.lazy(
+  () =>
+    import(
+      /* webpackPreload: true */
+      /* webpackChunkName: "preload" */
+      "./App"
+    )
+);
 
 ReactDOM.render(
   <React.StrictMode>
@@ -43,5 +44,3 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals(console.log);
-
-

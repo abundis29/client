@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./SideBox.scss";
 
-
 interface SideBarProps {
   msg?: string;
   className?: string;
@@ -10,7 +9,7 @@ interface SideBarProps {
 export type { SideBarProps };
 
 const SideBar = (props: SideBarProps): JSX.Element => {
-  const { msg = 'HI', className } = props;
+  const { msg = "HI", className } = props;
 
   const [value1, setValue1] = useState("VALUE 1");
   const [value2, setValue2] = useState("VALUE 2");
@@ -37,7 +36,7 @@ const SideBar = (props: SideBarProps): JSX.Element => {
       <p onClick={clickHandler2}>{value2}</p>
       <p onClick={clickHandler3}>{value3}</p>
       <p>#TEST Props 🛠</p>
-      <p className={className}>{msg ? msg : ''}</p>
+      <p className={className}>{msg ? msg : ""}</p>
     </div>
   );
 };

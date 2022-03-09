@@ -27,7 +27,7 @@ const SideBar = (props: SideBarProps): JSX.Element => {
   const clickHandler3 = () => {
     setValue3((prevState) => prevState + "VALUE 3");
   };
-  
+
   return (
     <div>
       <p onClick={clickHandler1}>{value1}</p>
