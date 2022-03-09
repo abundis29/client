@@ -121,7 +121,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run validate &&  npm run format"
+      "pre-commit": "npm run validate && npm run format"
     }
   }
 }
