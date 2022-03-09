@@ -79,7 +79,7 @@
     "lint": "NODE_ENV=development eslint .",
     "format": "prettier --write \"./src\"",
     "validate": "npm-run-all --parallel build:profile test:coverage lint",
-    "postinstall": "npm run validate && npm run prepare"
+    "postinstall": "npm run validate"
   },
   "eslintConfig": {
     "extends": [
