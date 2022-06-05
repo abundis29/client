@@ -1,9 +1,18 @@
 # PRECONFIG REACT_APP ❤️‍🩹
+
 ## Available Scripts 📝
 
 In the project directory, you can run:
 
 ## Installation 🛠
+
+### Using Template
+
+ `npx degit https://github.com/abundis29/client my-project`
+
+or
+
+### Cloning The Project
 
 ### `npm run setup`
 
